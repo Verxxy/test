@@ -2,14 +2,14 @@ if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
 local success,err = pcall(function()
-local Swagmode = Instance.new("ScreenGui")
-local SwagmodeFrame = Instance.new("Frame")
+local TTsmode = Instance.new("ScreenGui")
+local TTsmodeFrame = Instance.new("Frame")
 local MenuFrame = Instance.new("Frame")
 local TogglesButton = Instance.new("TextButton")
 local QuickTpButton = Instance.new("TextButton")
 local SideButton = Instance.new("TextButton")
 local imiecredits = Instance.new("TextLabel")
-local Swagmode_2 = Instance.new("TextLabel")
+local TTsmode_2 = Instance.new("TextLabel")
 local UIGradient = Instance.new("UIGradient")
 local Frame = Instance.new("Frame")
 local MainButton = Instance.new("TextButton")
@@ -116,19 +116,19 @@ local Frame_2 = Instance.new("Frame")
 local CrashServerButton = Instance.new("TextButton")
 
 --Properties:
-Swagmode.Name = "Swagmode"
-Swagmode.Parent = game.CoreGui
-Swagmode.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+TTsmode.Name = "TTsmode"
+TTsmode.Parent = game.CoreGui
+TTsmode.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-SwagmodeFrame.Name = "SwagmodeFrame"
-SwagmodeFrame.Parent = Swagmode
-SwagmodeFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-SwagmodeFrame.BorderSizePixel = 0
-SwagmodeFrame.Position = UDim2.new(0.212884605, 0, 0.190036908, 0)
-SwagmodeFrame.Size = UDim2.new(0, 605, 0, 336)
+TTsmodeFrame.Name = "TTsmodeFrame"
+TTsmodeFrame.Parent = TTsmode
+TTsmodeFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TTsmodeFrame.BorderSizePixel = 0
+TTsmodeFrame.Position = UDim2.new(0.212884605, 0, 0.190036908, 0)
+TTsmodeFrame.Size = UDim2.new(0, 605, 0, 336)
 
 MenuFrame.Name = "MenuFrame"
-MenuFrame.Parent = SwagmodeFrame
+MenuFrame.Parent = TTsmodeFrame
 MenuFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 MenuFrame.BorderSizePixel = 0
 MenuFrame.Size = UDim2.new(0, 155, 0, 336)
@@ -183,20 +183,20 @@ imiecredits.TextSize = 14.000
 imiecredits.TextXAlignment = Enum.TextXAlignment.Left
 imiecredits.TextYAlignment = Enum.TextYAlignment.Top
 
-Swagmode_2.Name = "Swagmode"
-Swagmode_2.Parent = MenuFrame
-Swagmode_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Swagmode_2.BackgroundTransparency = 1.000
-Swagmode_2.Position = UDim2.new(0.045161292, 0, 0, 0)
-Swagmode_2.Size = UDim2.new(0, 115, 0, 34)
-Swagmode_2.Font = Enum.Font.GothamBlack
-Swagmode_2.Text = "SWAGMODE"
-Swagmode_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Swagmode_2.TextSize = 20.000
+TTsmode_2.Name = "TTsmode"
+TTsmode_2.Parent = MenuFrame
+TTsmode_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TTsmode_2.BackgroundTransparency = 1.000
+TTsmode_2.Position = UDim2.new(0.045161292, 0, 0, 0)
+TTsmode_2.Size = UDim2.new(0, 115, 0, 34)
+TTsmode_2.Font = Enum.Font.GothamBlack
+TTsmode_2.Text = "TTsmode"
+TTsmode_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TTsmode_2.TextSize = 20.000
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(49, 48, 70)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient.Offset = Vector2.new(0.100000001, 0)
-UIGradient.Parent = Swagmode_2
+UIGradient.Parent = TTsmode_2
 
 Frame.Parent = MenuFrame
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -229,7 +229,7 @@ SellingButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 SellingButton.TextSize = 14.000
 
 DropShadowHolder.Name = "DropShadowHolder"
-DropShadowHolder.Parent = SwagmodeFrame
+DropShadowHolder.Parent = TTsmodeFrame
 DropShadowHolder.BackgroundTransparency = 1.000
 DropShadowHolder.BorderSizePixel = 0
 DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
@@ -250,14 +250,14 @@ DropShadow.ScaleType = Enum.ScaleType.Slice
 DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 
 TopLine.Name = "TopLine"
-TopLine.Parent = SwagmodeFrame
+TopLine.Parent = TTsmodeFrame
 TopLine.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 TopLine.BorderSizePixel = 0
 TopLine.Position = UDim2.new(0.256198347, 0, 0, 0)
 TopLine.Size = UDim2.new(0, 450, 0, 7)
 
 SideInfo.Name = "SideInfo"
-SideInfo.Parent = SwagmodeFrame
+SideInfo.Parent = TTsmodeFrame
 SideInfo.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 SideInfo.BorderSizePixel = 0
 SideInfo.Position = UDim2.new(0.778512418, 0, 0.020833334, 0)
@@ -335,7 +335,7 @@ CrewLabel.TextSize = 14.000
 CrewLabel.TextScaled = true
 
 Buttons.Name = "Buttons"
-Buttons.Parent = SwagmodeFrame
+Buttons.Parent = TTsmodeFrame
 Buttons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Buttons.BackgroundTransparency = 1.000
 Buttons.Position = UDim2.new(0.256198347, 0, 0.0297619049, 0)
@@ -1272,8 +1272,8 @@ CrashServerButton.Text = "CRASH SERVER"
 CrashServerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 CrashServerButton.TextSize = 14.000
 
-SwagmodeFrame.Active = true
-SwagmodeFrame.Draggable = true
+TTsmodeFrame.Active = true
+TTsmodeFrame.Draggable = true
 --[[
 local function FUVO_fake_script() -- imiecredits.LocalScript 
 	local script = Instance.new('LocalScript', imiecredits)
@@ -1295,8 +1295,8 @@ end
 
 
 --coroutine.wrap(PXXAONR_fake_script)()
-local function OZAKZ_fake_script() -- SwagmodeFrame.DragScript 
-	local script = Instance.new('LocalScript', SwagmodeFrame)
+local function OZAKZ_fake_script() -- TTsmodeFrame.DragScript 
+	local script = Instance.new('LocalScript', TTsmodeFrame)
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
@@ -1438,7 +1438,7 @@ coroutine.resume(coroutine.create(function()
             if player.Character.UpperTorso:FindFirstChild('OriginalSize') then
                 player.Character.UpperTorso:FindFirstChild('OriginalSize'):Destroy()
             end
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/swagmode/swagmode/main/swagnames'))()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/TTsmode/TTsmode/main/swagnames'))()
         end
         local success, err = pcall(main)
     end
@@ -1470,10 +1470,10 @@ red = Color3.new(255,0,0)
 buyingarmor = false
 UIS.InputBegan:Connect(function(key,b) 
     if key.KeyCode == Enum.KeyCode.V and not b then
-        if SwagmodeFrame.Visible == true then
-            SwagmodeFrame.Visible = false
+        if TTsmodeFrame.Visible == true then
+            TTsmodeFrame.Visible = false
         else
-            SwagmodeFrame.Visible = true
+            TTsmodeFrame.Visible = true
         end
     end
     if key.KeyCode == Enum.KeyCode.Q and not b then    
@@ -3599,7 +3599,7 @@ end
 muted = {}
 mutingnew = false 
 
-local ModCheck = loadstring(game:HttpGet('https://raw.githubusercontent.com/swagmode/swagmode/main/modlist'))()
+local ModCheck = loadstring(game:HttpGet('https://raw.githubusercontent.com/TTsmode/TTsmode/main/modlist'))()
 Players.PlayerAdded:Connect(function(plr)
     local SWAGMIN = table.find(swagmins, plr.UserId)
     if SWAGMIN or ModCheck[plr.UserId] then
@@ -4310,7 +4310,7 @@ elseif table.find(swagmins, player.UserId) then
 else
     IsMod = false
     DisableMod = false
-    announce('Commands Loaded', 'join discord.gg/swagmode for a list of commands', 10)
+    announce('Commands Loaded', 'join discord.gg/TTsmode for a list of commands', 10)
 end
 end)
 if err then print(err) end
